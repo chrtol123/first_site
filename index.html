@@ -8,8 +8,18 @@
 </head>
 <body>
 <h1>Hello, from this page!</h1>
-
 <h2>Another line!</h2>
+
+<script>
+var client = new XMLHttpRequest();
+client.open('GET', 'README.md');
+client.onreadystatechange = function() {
+      alert(client.responseText);
+}
+client.send();
+
+</script>
+
 </body>
 </html>
 
